@@ -1,0 +1,84 @@
+{
+  "export_version": "0.060",
+  "framed_nodes": {},
+  "groups": {},
+  "nodes": {
+    "Box": {
+      "bl_idname": "SvBoxNode",
+      "color": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -34.66797637939453,
+        215.84588623046875
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Generative Art": {
+      "bl_idname": "SvGenerativeArtNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -33.888526916503906,
+        -1.1267309188842773
+      ],
+      "params": {
+        "filename": "t_square_2d.xml"
+      },
+      "width": 158.0218505859375
+    },
+    "Viewer Draw2.001": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        195.04432678222656,
+        155.58627319335938
+      ],
+      "params": {
+        "display_edges": 1,
+        "display_faces": 1,
+        "display_verts": 0
+      },
+      "width": 140.0
+    }
+  },
+  "update_lists": [
+    [
+      "Box",
+      "Vers",
+      "Viewer Draw2.001",
+      "vertices"
+    ],
+    [
+      "Box",
+      "Pols",
+      "Viewer Draw2.001",
+      "edg_pol"
+    ],
+    [
+      "Generative Art",
+      "box",
+      "Viewer Draw2.001",
+      "matrix"
+    ]
+  ]
+}

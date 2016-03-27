@@ -1,0 +1,19 @@
+<rules max_depth="100">
+    <rule name="entry">
+        <call rule="R1"/>
+    </rule>
+    
+    <rule name="R1" max_depth="4" successor="pentagon">              
+        <call transforms="rz 180 sa 0.382" rule="R1"/>
+        <call transforms="tx 0.618 sa 0.382" rule="R1"/>
+        <call transforms="tx 0.191 ty 0.5878 sa 0.382" rule="R1"/>
+        <call transforms="tx -0.5 ty 0.3633  sa 0.382" rule="R1"/>
+        <call transforms="tx -0.5 ty -0.3633  sa 0.382" rule="R1"/>
+        <call transforms="tx 0.191 ty -0.5878 sa 0.382" rule="R1"/>
+    </rule>
+    
+    <rule name="pentagon">
+        <instance shape="pentagon"/>
+       </rule>
+
+</rules>

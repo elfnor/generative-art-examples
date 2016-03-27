@@ -1,0 +1,21 @@
+<rules max_depth="100">
+    <constants scale="(3-5**0.5)/2" t1="(5**0.5-1)/2" t2="(3-5**0.5)/4" />
+    <constants t3="((10**0.5-2**0.5)*(5+5**0.5)**0.5)/8" t4="((10**0.5-2**0.5)*(5-5**0.5)**0.5)/8" />
+    <rule name="entry">
+        <call rule="R1"/>
+    </rule>
+    
+    <rule name="R1" max_depth="{md}" successor="pentagon">              
+        <call transforms="rz 180 sa {scale}" rule="R1"/>
+        <call transforms="tx {t1} sa {scale}" rule="R1"/>
+        <call transforms="tx {t2} ty {t3} sa {scale}" rule="R1"/>
+        <call transforms="tx -0.5 ty {t4}  sa {scale}" rule="R1"/>
+        <call transforms="tx -0.5 ty -1*{t4}  sa {scale}" rule="R1"/>
+        <call transforms="tx {t2} ty -1*{t3} sa {scale}" rule="R1"/>
+    </rule>
+    
+    <rule name="pentagon">
+        <instance shape="pentagon"/>
+    </rule>
+
+</rules>

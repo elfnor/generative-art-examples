@@ -1,0 +1,149 @@
+{
+  "export_version": "0.060",
+  "framed_nodes": {},
+  "groups": {},
+  "nodes": {
+    "Apply matrix to mesh": {
+      "bl_idname": "SvMatrixApplyJoinNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -166.37330627441406,
+        111.50359344482422
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Generative Art": {
+      "bl_idname": "SvGenerativeArtNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -359.5046691894531,
+        -45.64970397949219
+      ],
+      "params": {
+        "filename": "koch_1"
+      },
+      "width": 140.0
+    },
+    "Line": {
+      "bl_idname": "LineNode",
+      "color": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -354.1793518066406,
+        187.22479248046875
+      ],
+      "params": {
+        "int_": 2,
+        "step_": 3.0
+      },
+      "width": 140.0
+    },
+    "Remove Doubles BETA": {
+      "bl_idname": "SvRemoveDoublesNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        6.937648773193359,
+        106.37110137939453
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Viewer Draw2": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        185.4657440185547,
+        187.6952667236328
+      ],
+      "params": {
+        "activate": 1,
+        "display_edges": 1,
+        "display_faces": 1,
+        "display_verts": 0,
+        "edge_width": 2,
+        "extended_matrix": 0,
+        "shading": 1
+      },
+      "width": 140.0
+    }
+  },
+  "update_lists": [
+    [
+      "Line",
+      "Vertices",
+      "Apply matrix to mesh",
+      "Vertices"
+    ],
+    [
+      "Line",
+      "Edges",
+      "Apply matrix to mesh",
+      "Edges"
+    ],
+    [
+      "Generative Art",
+      "s0",
+      "Apply matrix to mesh",
+      "Matrices"
+    ],
+    [
+      "Apply matrix to mesh",
+      "Vertices",
+      "Remove Doubles BETA",
+      "Vertices"
+    ],
+    [
+      "Apply matrix to mesh",
+      "Edges",
+      "Remove Doubles BETA",
+      "PolyEdge"
+    ],
+    [
+      "Remove Doubles BETA",
+      "Vertices",
+      "Viewer Draw2",
+      "vertices"
+    ],
+    [
+      "Remove Doubles BETA",
+      "Edges",
+      "Viewer Draw2",
+      "edg_pol"
+    ]
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "export_version": "0.060",
+  "framed_nodes": {},
+  "groups": {},
+  "nodes": {
+    "Circle": {
+      "bl_idname": "SvCircleNode",
+      "color": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -202.13365173339844,
+        215.78421020507812
+      ],
+      "params": {
+        "degr_": 6.2831854820251465,
+        "vert_": 5
+      },
+      "width": 140.0
+    },
+    "Generative Art": {
+      "bl_idname": "SvGenerativeArtNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -234.21017456054688,
+        11.119636535644531
+      ],
+      "params": {
+        "filename": "pentaflake.xml",
+        "maxmats": 5000
+      },
+      "width": 172.283935546875
+    },
+    "Viewer Draw2": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -11.461225509643555,
+        102.15870666503906
+      ],
+      "params": {
+        "activate": 1,
+        "display_edges": 0,
+        "display_faces": 1,
+        "display_verts": 0
+      },
+      "width": 140.0
+    }
+  },
+  "update_lists": [
+    [
+      "Circle",
+      "Vertices",
+      "Viewer Draw2",
+      "vertices"
+    ],
+    [
+      "Circle",
+      "Polygons",
+      "Viewer Draw2",
+      "edg_pol"
+    ],
+    [
+      "Generative Art",
+      "pentagon",
+      "Viewer Draw2",
+      "matrix"
+    ]
+  ]
+}
