@@ -1,0 +1,35 @@
+<rules max_depth="50">
+    <rule name="entry">
+        <call count="1" transforms="rz 90" rule="R1"/>
+    </rule>
+    <rule name="R1" weight="20" dir="straight">
+        <instance transforms="tx 0.5" shape="00_straight"/>
+        <call transforms="tx 1" rule="R1"/>
+    </rule>
+    
+    <rule name="R1" weight="10" dir="right">
+        <instance transforms="ty -1" shape="01_bend"/>
+        <call transforms="tx 1 ty -1 rz -90" rule="R1"/>
+    </rule>
+    
+    <rule name="R1" weight="10" dir="left">
+        <instance transforms="rz -90 tx -1" shape="01_bend"/>
+        <call transforms="tx 1 ty 1 rz 90" rule="R1"/>
+    </rule>
+    
+    <rule name="R1" weight="10" dir="up">
+        <instance transforms="tz 0.5 tx 0.5" shape="02_ramp"/>
+        <call transforms="tz 1 tx 1" rule="R1"/>
+    </rule>
+    
+    <rule name="R1" weight="10" dir="down">
+        <instance transforms="tz -0.5 tx 0.5 rz 180" shape="02_ramp"/>
+        <call transforms="tx 1 tz -1" rule="R1"/>
+    </rule>
+    
+    <rule name="R1" weight="5" dir="branch">
+        <call rule="R1"/>
+        <call transforms="rz 90" rule="R1"/>
+    </rule>
+            
+</rules>

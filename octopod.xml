@@ -1,0 +1,13 @@
+<rules max_depth="20">
+    <rule name="entry">
+        <call count="100" transforms="rx 3.6" rule="R1"/>
+    </rule>
+    <rule name="R1">
+        <call transforms="sa 0.9 ry 6 tz 1" rule="R1"/>
+        <instance transforms="s 0.2 0.5 1" shape="sphere"/>
+    </rule>
+    <rule name="R1">
+        <call transforms="sa 0.9 ry -6 tz 1" rule="R1"/>
+        <instance transforms="s 0.2 0.5 1" shape="box"/>
+    </rule>
+</rules>

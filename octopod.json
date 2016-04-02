@@ -1,0 +1,148 @@
+{
+  "export_version": "0.060",
+  "framed_nodes": {},
+  "groups": {},
+  "nodes": {
+    "Box": {
+      "bl_idname": "SvBoxNode",
+      "color": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -199.49330139160156,
+        170.58041381835938
+      ],
+      "params": {
+        "Size": 0.8999999761581421
+      },
+      "width": 140.0
+    },
+    "Generative Art": {
+      "bl_idname": "SvGenerativeArtNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -383.66754150390625,
+        45.66996765136719
+      ],
+      "params": {
+        "filename": "octopod_blog",
+        "maxmats": 5000
+      },
+      "width": 140.0
+    },
+    "Sphere": {
+      "bl_idname": "SphereNode",
+      "color": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -200.58187866210938,
+        -95.20303344726562
+      ],
+      "params": {
+        "U_": 6,
+        "V_": 6,
+        "rad_": 0.5
+      },
+      "width": 140.0
+    },
+    "Viewer Draw2": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -5.895538330078125,
+        166.02215576171875
+      ],
+      "params": {
+        "activate": 1,
+        "display_edges": 1,
+        "display_faces": 1,
+        "display_verts": 0
+      },
+      "width": 140.0
+    },
+    "Viewer Draw2.002": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        2.2528343200683594,
+        -94.695068359375
+      ],
+      "params": {
+        "display_edges": 1,
+        "display_faces": 1,
+        "display_verts": 0
+      },
+      "width": 140.0
+    }
+  },
+  "update_lists": [
+    [
+      "Box",
+      "Vers",
+      "Viewer Draw2",
+      "vertices"
+    ],
+    [
+      "Box",
+      "Pols",
+      "Viewer Draw2",
+      "edg_pol"
+    ],
+    [
+      "Generative Art",
+      "box",
+      "Viewer Draw2",
+      "matrix"
+    ],
+    [
+      "Sphere",
+      "Vertices",
+      "Viewer Draw2.002",
+      "vertices"
+    ],
+    [
+      "Sphere",
+      "Polygons",
+      "Viewer Draw2.002",
+      "edg_pol"
+    ],
+    [
+      "Generative Art",
+      "sphere",
+      "Viewer Draw2.002",
+      "matrix"
+    ]
+  ]
+}

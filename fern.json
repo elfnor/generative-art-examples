@@ -1,0 +1,89 @@
+{
+  "export_version": "0.060",
+  "framed_nodes": {},
+  "groups": {},
+  "nodes": {
+    "Circle": {
+      "bl_idname": "SvCircleNode",
+      "color": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -548.9220581054688,
+        112.38813781738281
+      ],
+      "params": {
+        "degr_": 6.2831854820251465,
+        "vert_": 7
+      },
+      "width": 140.0
+    },
+    "Generative Art": {
+      "bl_idname": "SvGenerativeArtNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -391.9693298339844,
+        116.84732818603516
+      ],
+      "params": {
+        "filename": "fern",
+        "maxmats": 5000
+      },
+      "width": 140.0
+    },
+    "Viewer Draw2.002": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -209.48370361328125,
+        123.02301025390625
+      ],
+      "params": {
+        "activate": 1,
+        "display_edges": 1,
+        "display_faces": 1,
+        "display_verts": 0
+      },
+      "width": 140.0
+    }
+  },
+  "update_lists": [
+    [
+      "Circle",
+      "Vertices",
+      "Generative Art",
+      "Vertices"
+    ],
+    [
+      "Generative Art",
+      "Vertices",
+      "Viewer Draw2.002",
+      "vertices"
+    ],
+    [
+      "Generative Art",
+      "Faces",
+      "Viewer Draw2.002",
+      "edg_pol"
+    ]
+  ]
+}

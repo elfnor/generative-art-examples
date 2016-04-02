@@ -1,0 +1,14 @@
+<rules max_depth="2000">
+    <rule name="entry">
+        <call rule="R1"/>
+    </rule>
+    <rule name="R1" weight = "10">
+        <call transforms="tx 1 rz 5 ry 2" rule="R1"/>
+        <instance transforms="sa 3 ry 90" shape="box"/>
+    </rule>
+    <rule name="R1" weight = "10">
+        <call transforms="tx 1 rz -5 ry 2" rule="R1"/>
+        <instance transforms="sa 3 ry 90" shape="box"/>
+    </rule>
+        
+</rules>

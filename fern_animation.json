@@ -1,0 +1,155 @@
+{
+  "export_version": "0.060",
+  "framed_nodes": {},
+  "groups": {},
+  "nodes": {
+    "Bmesh Viewer Draw 2": {
+      "bl_idname": "SvBmeshViewerNodeMK2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": true,
+      "label": "",
+      "location": [
+        510.15594482421875,
+        171.3095245361328
+      ],
+      "params": {
+        "lp": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "width": 140.0
+    },
+    "Circle": {
+      "bl_idname": "SvCircleNode",
+      "color": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        37.65679931640625,
+        180.116943359375
+      ],
+      "params": {
+        "degr_": 6.2831854820251465,
+        "rad_": 1.2400000095367432,
+        "vert_": 5
+      },
+      "width": 171.64358520507812
+    },
+    "Formula2": {
+      "bl_idname": "Formula2Node",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        55.2412109375,
+        -47.322509765625
+      ],
+      "params": {
+        "formula": "-0.04*x+16."
+      },
+      "width": 163.68917846679688
+    },
+    "Frame Info": {
+      "bl_idname": "SvFrameInfoNode",
+      "color": [
+        0.0,
+        0.5,
+        0.20000000298023224
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -130.96792602539062,
+        -66.86351013183594
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Generative Art": {
+      "bl_idname": "SvGenerativeArtNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        294.14788818359375,
+        137.87864685058594
+      ],
+      "params": {
+        "filename": "fern_animation.xml"
+      },
+      "width": 140.0
+    }
+  },
+  "update_lists": [
+    [
+      "Frame Info",
+      "Current Frame",
+      "Formula2",
+      "X"
+    ],
+    [
+      "Circle",
+      "Vertices",
+      "Generative Art",
+      "Vertices"
+    ],
+    [
+      "Formula2",
+      "Result",
+      "Generative Art",
+      "curl_angle"
+    ],
+    [
+      "Generative Art",
+      "Vertices",
+      "Bmesh Viewer Draw 2",
+      "vertices"
+    ],
+    [
+      "Generative Art",
+      "Faces",
+      "Bmesh Viewer Draw 2",
+      "faces"
+    ]
+  ]
+}

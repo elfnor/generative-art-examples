@@ -1,0 +1,80 @@
+{
+  "export_version": "0.060",
+  "framed_nodes": {},
+  "groups": {},
+  "nodes": {
+    "Box": {
+      "bl_idname": "SvBoxNode",
+      "color": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -154.17820739746094,
+        206.4365997314453
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Generative Art": {
+      "bl_idname": "SvGenerativeArtNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -153.13644409179688,
+        -3.0517578125e-05
+      ],
+      "params": {
+        "filename": "spirals_6.xml"
+      },
+      "width": 140.0
+    },
+    "Viewer Draw2": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        40.62804412841797,
+        129.28353881835938
+      ],
+      "params": {},
+      "width": 140.0
+    }
+  },
+  "update_lists": [
+    [
+      "Box",
+      "Vers",
+      "Viewer Draw2",
+      "vertices"
+    ],
+    [
+      "Box",
+      "Pols",
+      "Viewer Draw2",
+      "edg_pol"
+    ],
+    [
+      "Generative Art",
+      "box",
+      "Viewer Draw2",
+      "matrix"
+    ]
+  ]
+}

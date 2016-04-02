@@ -1,0 +1,21 @@
+<rules max_depth="200">
+    <rule name="entry">
+        <call  rule="spiral"/>
+    </rule>
+    <rule name="spiral" weight="100">
+        <instance shape="tubey"/>
+        <call transforms="tz 0.4 rx 1 sa 0.995" rule="spiral"/>
+    </rule>
+    <rule name="spiral" weight="100">
+        <instance shape="tubey"/>
+        <call transforms="tz 0.4 rx 1 ry 1 sa 0.995" rule="spiral"/>
+    </rule>
+    <rule name="spiral" weight="100">
+        <instance shape="tubey"/>
+        <call transforms="tz 0.4 rx 1 rz -1 sa 0.995" rule="spiral"/>
+    </rule>
+    <rule name="spiral" weight="6">
+        <call transforms="rx 15" rule="spiral"/>
+        <call transforms="rz 180" rule="spiral"/>
+    </rule>
+</rules>

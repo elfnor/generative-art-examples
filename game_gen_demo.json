@@ -1,0 +1,195 @@
+{
+  "export_version": "0.060",
+  "framed_nodes": {},
+  "groups": {},
+  "nodes": {
+    "Generative Art": {
+      "bl_idname": "SvGenerativeArtNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -46.32061004638672,
+        38.430564880371094
+      ],
+      "params": {
+        "filename": "game_gen_demo.xml",
+        "maxmats": 1000,
+        "rseed": 15
+      },
+      "width": 140.0
+    },
+    "Objects_in": {
+      "bl_idname": "ObjectsNode",
+      "color": [
+        0.0,
+        0.5,
+        0.20000000298023224
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        159.8524169921875,
+        290.16009521484375
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Objects_in.001": {
+      "bl_idname": "ObjectsNode",
+      "color": [
+        0.0,
+        0.5,
+        0.20000000298023224
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        154.33758544921875,
+        34.985008239746094
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Objects_in.002": {
+      "bl_idname": "ObjectsNode",
+      "color": [
+        0.0,
+        0.5,
+        0.20000000298023224
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        153.80914306640625,
+        -235.2017822265625
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Viewer Draw2": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        392.1083068847656,
+        275.9235534667969
+      ],
+      "params": {
+        "activate": 1,
+        "display_verts": 0
+      },
+      "width": 143.074462890625
+    },
+    "Viewer Draw2.001": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        379.858154296875,
+        27.302860260009766
+      ],
+      "params": {
+        "activate": 1,
+        "display_verts": 0
+      },
+      "width": 140.0
+    },
+    "Viewer Draw2.002": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        386.9102783203125,
+        -234.13104248046875
+      ],
+      "params": {
+        "activate": 1,
+        "display_verts": 0
+      },
+      "width": 140.0
+    }
+  },
+  "update_lists": [
+    [
+      "Objects_in.001",
+      "Vertices",
+      "Viewer Draw2.001",
+      "vertices"
+    ],
+    [
+      "Objects_in.001",
+      "Polygons",
+      "Viewer Draw2.001",
+      "edg_pol"
+    ],
+    [
+      "Generative Art",
+      "01_bend",
+      "Viewer Draw2.001",
+      "matrix"
+    ],
+    [
+      "Objects_in",
+      "Vertices",
+      "Viewer Draw2",
+      "vertices"
+    ],
+    [
+      "Objects_in",
+      "Polygons",
+      "Viewer Draw2",
+      "edg_pol"
+    ],
+    [
+      "Generative Art",
+      "00_straight",
+      "Viewer Draw2",
+      "matrix"
+    ],
+    [
+      "Objects_in.002",
+      "Vertices",
+      "Viewer Draw2.002",
+      "vertices"
+    ],
+    [
+      "Objects_in.002",
+      "Polygons",
+      "Viewer Draw2.002",
+      "edg_pol"
+    ],
+    [
+      "Generative Art",
+      "02_ramp",
+      "Viewer Draw2.002",
+      "matrix"
+    ]
+  ]
+}

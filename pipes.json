@@ -1,0 +1,137 @@
+{
+  "export_version": "0.060",
+  "framed_nodes": {},
+  "groups": {},
+  "nodes": {
+    "Generative Art": {
+      "bl_idname": "SvGenerativeArtNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -363.271240234375,
+        63.56500244140625
+      ],
+      "params": {
+        "filename": "pipes.xml"
+      },
+      "width": 140.0
+    },
+    "Objects_in": {
+      "bl_idname": "ObjectsNode",
+      "color": [
+        0.0,
+        0.5,
+        0.20000000298023224
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -173.2167510986328,
+        -69.27238464355469
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Objects_in.001": {
+      "bl_idname": "ObjectsNode",
+      "color": [
+        0.0,
+        0.5,
+        0.20000000298023224
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -173.35601806640625,
+        236.05889892578125
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Viewer Draw2": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        28.519256591796875,
+        -68.67060852050781
+      ],
+      "params": {
+        "activate": 1,
+        "display_faces": 1
+      },
+      "width": 140.0
+    },
+    "Viewer Draw2.001": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        31.341339111328125,
+        171.29039001464844
+      ],
+      "params": {
+        "activate": 1
+      },
+      "width": 140.0
+    }
+  },
+  "update_lists": [
+    [
+      "Objects_in",
+      "Vertices",
+      "Viewer Draw2",
+      "vertices"
+    ],
+    [
+      "Objects_in",
+      "Polygons",
+      "Viewer Draw2",
+      "edg_pol"
+    ],
+    [
+      "Generative Art",
+      "straight",
+      "Viewer Draw2",
+      "matrix"
+    ],
+    [
+      "Objects_in.001",
+      "Vertices",
+      "Viewer Draw2.001",
+      "vertices"
+    ],
+    [
+      "Objects_in.001",
+      "Polygons",
+      "Viewer Draw2.001",
+      "edg_pol"
+    ],
+    [
+      "Generative Art",
+      "bend",
+      "Viewer Draw2.001",
+      "matrix"
+    ]
+  ]
+}

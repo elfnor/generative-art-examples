@@ -1,0 +1,354 @@
+{
+  "export_version": "0.060",
+  "framed_nodes": {},
+  "groups": {},
+  "nodes": {
+    "Generative Art": {
+      "bl_idname": "SvGenerativeArtNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -613.6741333007812,
+        85.99776458740234
+      ],
+      "params": {
+        "filename": "pipes.xml"
+      },
+      "width": 140.0
+    },
+    "List Shuffle": {
+      "bl_idname": "ListShuffleNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -411.61083984375,
+        -319.3028564453125
+      ],
+      "params": {
+        "level": 1,
+        "seed": 4
+      },
+      "width": 140.0
+    },
+    "List Shuffle.001": {
+      "bl_idname": "ListShuffleNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -400.33734130859375,
+        -144.42185974121094
+      ],
+      "params": {
+        "level": 1,
+        "seed": 4
+      },
+      "width": 140.0
+    },
+    "List Slice": {
+      "bl_idname": "ListSliceNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -222.42214965820312,
+        -323.8477783203125
+      ],
+      "params": {
+        "level": 0,
+        "start": 0,
+        "stop": 20
+      },
+      "width": 140.0
+    },
+    "List Slice.001": {
+      "bl_idname": "ListSliceNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -217.760986328125,
+        -129.1456298828125
+      ],
+      "params": {
+        "level": 0,
+        "start": 0,
+        "stop": 50
+      },
+      "width": 140.0
+    },
+    "Objects_in": {
+      "bl_idname": "ObjectsNode",
+      "color": [
+        0.0,
+        0.5,
+        0.20000000298023224
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -44.09735107421875,
+        179.105712890625
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Objects_in.001": {
+      "bl_idname": "ObjectsNode",
+      "color": [
+        0.0,
+        0.5,
+        0.20000000298023224
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -44.793312072753906,
+        434.6804504394531
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Objects_in.002": {
+      "bl_idname": "ObjectsNode",
+      "color": [
+        0.0,
+        0.5,
+        0.20000000298023224
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -34.515106201171875,
+        -331.166748046875
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Objects_in.003": {
+      "bl_idname": "ObjectsNode",
+      "color": [
+        0.0,
+        0.5,
+        0.20000000298023224
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -37.126991271972656,
+        -77.6854248046875
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Viewer Draw2": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        129.13172912597656,
+        405.99102783203125
+      ],
+      "params": {
+        "activate": 1,
+        "display_verts": 0
+      },
+      "width": 140.0
+    },
+    "Viewer Draw2.001": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        137.94366455078125,
+        174.32162475585938
+      ],
+      "params": {
+        "activate": 1,
+        "display_verts": 0
+      },
+      "width": 140.0
+    },
+    "Viewer Draw2.002": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        138.84689331054688,
+        -298.2715759277344
+      ],
+      "params": {
+        "activate": 1,
+        "display_verts": 0
+      },
+      "width": 140.0
+    },
+    "Viewer Draw2.003": {
+      "bl_idname": "ViewerNode2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        134.2783203125,
+        -49.095062255859375
+      ],
+      "params": {
+        "activate": 1,
+        "display_verts": 0
+      },
+      "width": 140.0
+    }
+  },
+  "update_lists": [
+    [
+      "Objects_in",
+      "Vertices",
+      "Viewer Draw2.001",
+      "vertices"
+    ],
+    [
+      "Objects_in",
+      "Polygons",
+      "Viewer Draw2.001",
+      "edg_pol"
+    ],
+    [
+      "Generative Art",
+      "straight",
+      "Viewer Draw2.001",
+      "matrix"
+    ],
+    [
+      "Generative Art",
+      "straight",
+      "List Shuffle",
+      "data"
+    ],
+    [
+      "List Shuffle",
+      "data",
+      "List Slice",
+      "Data"
+    ],
+    [
+      "Generative Art",
+      "bend",
+      "List Shuffle.001",
+      "data"
+    ],
+    [
+      "List Shuffle.001",
+      "data",
+      "List Slice.001",
+      "Data"
+    ],
+    [
+      "Objects_in.001",
+      "Vertices",
+      "Viewer Draw2",
+      "vertices"
+    ],
+    [
+      "Objects_in.001",
+      "Polygons",
+      "Viewer Draw2",
+      "edg_pol"
+    ],
+    [
+      "Generative Art",
+      "bend",
+      "Viewer Draw2",
+      "matrix"
+    ],
+    [
+      "Objects_in.002",
+      "Vertices",
+      "Viewer Draw2.002",
+      "vertices"
+    ],
+    [
+      "Objects_in.002",
+      "Polygons",
+      "Viewer Draw2.002",
+      "edg_pol"
+    ],
+    [
+      "List Slice",
+      "Slice",
+      "Viewer Draw2.002",
+      "matrix"
+    ],
+    [
+      "Objects_in.003",
+      "Vertices",
+      "Viewer Draw2.003",
+      "vertices"
+    ],
+    [
+      "Objects_in.003",
+      "Polygons",
+      "Viewer Draw2.003",
+      "edg_pol"
+    ],
+    [
+      "List Slice.001",
+      "Slice",
+      "Viewer Draw2.003",
+      "matrix"
+    ]
+  ]
+}
