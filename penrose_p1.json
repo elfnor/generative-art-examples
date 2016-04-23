@@ -1,0 +1,236 @@
+{
+  "export_version": "0.060",
+  "framed_nodes": {},
+  "groups": {},
+  "nodes": {
+    "Apply matrix to mesh": {
+      "bl_idname": "SvMatrixApplyJoinNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        2.244572162628174,
+        185.6050567626953
+      ],
+      "params": {
+        "do_join": 1
+      },
+      "width": 140.0
+    },
+    "Bmesh Viewer Draw 2": {
+      "bl_idname": "SvBmeshViewerNodeMK2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": true,
+      "label": "",
+      "location": [
+        552.6748046875,
+        227.58477783203125
+      ],
+      "params": {
+        "lp": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "width": 140.0
+    },
+    "Circle": {
+      "bl_idname": "SvCircleNode",
+      "color": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -202.7557830810547,
+        273.1602783203125
+      ],
+      "params": {
+        "degr_": 6.2831854820251465,
+        "vert_": 5
+      },
+      "width": 140.0
+    },
+    "Fill Holes": {
+      "bl_idname": "SvFillsHoleNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        361.1595764160156,
+        174.74676513671875
+      ],
+      "params": {
+        "sides": 10
+      },
+      "width": 140.0
+    },
+    "Generative Art": {
+      "bl_idname": "SvGenerativeArtNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -210.81231689453125,
+        65.83885192871094
+      ],
+      "params": {
+        "filename": "penrose_p1.xml"
+      },
+      "width": 153.42343139648438
+    },
+    "Integer": {
+      "bl_idname": "IntegerNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -382.6523132324219,
+        -88.78966522216797
+      ],
+      "params": {
+        "int_": 5
+      },
+      "width": 140.0
+    },
+    "Remove Doubles BETA": {
+      "bl_idname": "SvRemoveDoublesNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        180.7589569091797,
+        174.89218139648438
+      ],
+      "params": {
+        "distance": 0.004999999888241291
+      },
+      "width": 140.0
+    }
+  },
+  "update_lists": [
+    [
+      "Integer",
+      "Integer",
+      "Generative Art",
+      "md"
+    ],
+    [
+      "Circle",
+      "Vertices",
+      "Apply matrix to mesh",
+      "Vertices"
+    ],
+    [
+      "Circle",
+      "Edges",
+      "Apply matrix to mesh",
+      "Edges"
+    ],
+    [
+      "Circle",
+      "Polygons",
+      "Apply matrix to mesh",
+      "Faces"
+    ],
+    [
+      "Generative Art",
+      "penta",
+      "Apply matrix to mesh",
+      "Matrices"
+    ],
+    [
+      "Apply matrix to mesh",
+      "Vertices",
+      "Remove Doubles BETA",
+      "Vertices"
+    ],
+    [
+      "Apply matrix to mesh",
+      "Faces",
+      "Remove Doubles BETA",
+      "PolyEdge"
+    ],
+    [
+      "Remove Doubles BETA",
+      "Vertices",
+      "Fill Holes",
+      "vertices"
+    ],
+    [
+      "Remove Doubles BETA",
+      "Edges",
+      "Fill Holes",
+      "edges"
+    ],
+    [
+      "Fill Holes",
+      "vertices",
+      "Bmesh Viewer Draw 2",
+      "vertices"
+    ],
+    [
+      "Fill Holes",
+      "edges",
+      "Bmesh Viewer Draw 2",
+      "edges"
+    ],
+    [
+      "Fill Holes",
+      "polygons",
+      "Bmesh Viewer Draw 2",
+      "faces"
+    ]
+  ]
+}

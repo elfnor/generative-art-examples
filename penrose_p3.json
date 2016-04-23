@@ -1,0 +1,239 @@
+{
+  "export_version": "0.060",
+  "framed_nodes": {},
+  "groups": {},
+  "nodes": {
+    "Apply matrix to mesh": {
+      "bl_idname": "SvMatrixApplyJoinNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -138.47830200195312,
+        171.7958984375
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Bmesh Viewer Draw 2": {
+      "bl_idname": "SvBmeshViewerNodeMK2",
+      "color": [
+        1.0,
+        0.30000001192092896,
+        0.0
+      ],
+      "height": 100.0,
+      "hide": true,
+      "label": "",
+      "location": [
+        372.77972412109375,
+        200.31463623046875
+      ],
+      "params": {
+        "lp": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "width": 140.0
+    },
+    "Circle": {
+      "bl_idname": "SvCircleNode",
+      "color": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -339.365966796875,
+        243.1420440673828
+      ],
+      "params": {
+        "degr_": 6.2831854820251465,
+        "vert_": 3
+      },
+      "width": 140.0
+    },
+    "Generative Art": {
+      "bl_idname": "SvGenerativeArtNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -339.10076904296875,
+        37.43482208251953
+      ],
+      "params": {
+        "filename": "penrose_p3.xml",
+        "maxmats": 5000
+      },
+      "width": 159.46441650390625
+    },
+    "Integer": {
+      "bl_idname": "IntegerNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        -497.2218322753906,
+        -146.89674377441406
+      ],
+      "params": {
+        "int_": 1
+      },
+      "width": 140.0
+    },
+    "Recalc Normals": {
+      "bl_idname": "SvRecalcNormalsNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        199.37506103515625,
+        171.1593017578125
+      ],
+      "params": {},
+      "width": 140.0
+    },
+    "Remove Doubles BETA": {
+      "bl_idname": "SvRemoveDoublesNode",
+      "color": [
+        0.6079999804496765,
+        0.6079999804496765,
+        0.6079999804496765
+      ],
+      "height": 100.0,
+      "hide": false,
+      "label": "",
+      "location": [
+        29.009857177734375,
+        159.5182647705078
+      ],
+      "params": {
+        "distance": 0.004999999888241291
+      },
+      "width": 140.0
+    }
+  },
+  "update_lists": [
+    [
+      "Integer",
+      "Integer",
+      "Generative Art",
+      "md"
+    ],
+    [
+      "Circle",
+      "Vertices",
+      "Apply matrix to mesh",
+      "Vertices"
+    ],
+    [
+      "Circle",
+      "Edges",
+      "Apply matrix to mesh",
+      "Edges"
+    ],
+    [
+      "Circle",
+      "Polygons",
+      "Apply matrix to mesh",
+      "Faces"
+    ],
+    [
+      "Generative Art",
+      "tri",
+      "Apply matrix to mesh",
+      "Matrices"
+    ],
+    [
+      "Apply matrix to mesh",
+      "Vertices",
+      "Remove Doubles BETA",
+      "Vertices"
+    ],
+    [
+      "Apply matrix to mesh",
+      "Faces",
+      "Remove Doubles BETA",
+      "PolyEdge"
+    ],
+    [
+      "Remove Doubles BETA",
+      "Vertices",
+      "Recalc Normals",
+      "Vertices"
+    ],
+    [
+      "Remove Doubles BETA",
+      "Edges",
+      "Recalc Normals",
+      "Edges"
+    ],
+    [
+      "Remove Doubles BETA",
+      "Polygons",
+      "Recalc Normals",
+      "Polygons"
+    ],
+    [
+      "Recalc Normals",
+      "Vertices",
+      "Bmesh Viewer Draw 2",
+      "vertices"
+    ],
+    [
+      "Recalc Normals",
+      "Edges",
+      "Bmesh Viewer Draw 2",
+      "edges"
+    ],
+    [
+      "Recalc Normals",
+      "Polygons",
+      "Bmesh Viewer Draw 2",
+      "faces"
+    ]
+  ]
+}
