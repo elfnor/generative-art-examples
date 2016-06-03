@@ -81,7 +81,8 @@ def eisen_grammar():
     c3trans = pp.CaselessKeyword('blend') + pp.Word(pp.alphanums + '#') + fnum
     trans = gtrans | ctrans | c2trans | c3trans
 
-    shape_words = ['box', 'grid', 'sphere', 'line']
+    
+    
 
     rule_name = pp.NotAny(pp.CaselessKeyword('rule')) + \
         pp.Word(pp.alphas, pp.alphanums+'_')
@@ -98,10 +99,11 @@ def eisen_grammar():
 
     weight = pp.oneOf('w weight', caseless=True)
     w_mod = weight + fnum('wm')
+    
+    shape_words = pp.oneOf(['box', 'grid', 'sphere', 'line'], caseless=True)
+    shape = pp.Combine(shape_words + pp.Optional(pp.Word(pp.alphas + ':')))
 
-    shape = pp.MatchFirst(map(pp.CaselessKeyword, shape_words))
-
-    global_md = pp.CaselessKeyword('set') + pp.CaselessKeyword('maxdepth') \
+    global_md = pp.CaselessKeyword('set') + md \
                                           + fnum('global_md')
 
     shape_call = (pp.Optional(loop) + 
