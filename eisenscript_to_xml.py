@@ -240,11 +240,16 @@ def test_examples():
         except:
             print('failed')
 
-if __name__ == "__main__":
-    try: 
+if __name__ == "__main__":    
+    try:
         translate_eisen(sys.argv[1])
-    except:
+    except IndexError:
         print('usage: python eisenscript_to_xml.py /path/to/file/totranslate.es')
+    except pp.ParseException:
+        print("I don't understand the eisenscript")
+    
+
+
         
         
 
